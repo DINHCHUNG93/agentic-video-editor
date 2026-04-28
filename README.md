@@ -1,3 +1,34 @@
+
+🎬 Framework nguồn mở giúp AI tự động dựng video quảng cáo từ raw footage
+
+Thay vì ngồi cắt từng cảnh thủ công trong Premiere hay CapCut, dự án này cho phép bạn đưa vào footage thô + creative brief, phần còn lại để một nhóm AI agents xử lý.
+
+Hệ thống sử dụng Google Gemini + FFmpeg để tự động:
+• Scene detection – phát hiện cảnh quay tốt nhất
+• Shot selection – chọn đoạn phù hợp nhất
+• Trimming & sequencing – cắt ghép theo flow hợp lý
+• Rendering – xuất video hoàn chỉnh
+• Reviewer loop – AI tự review và retry nếu chất lượng chưa đạt
+
+Điểm hay nhất là workflow rất phù hợp cho performance marketing:
+biến webinar dài 90 phút thành highlight reel 3 phút, UGC ads, testimonial ads, short-form ads… gần như tự động hóa hoàn toàn.  ￼
+
+Tech stack:
+• Python 3.11
+• Google Gemini ADK
+• FFmpeg + MoviePy
+• FastAPI + Next.js
+• YAML pipelines + Pydantic
+
+CLI-first nên rất hợp để tích hợp vào hệ thống content pipeline doanh nghiệp:
+chỉ cần chạy một lệnh là AI bắt đầu dựng video.
+
+Một dự án cực hay cho team marketing, growth và agency đang muốn scale video ads bằng AI.
+
+#AgenticVideoEditor #AIMarketing #OpenSourceAI
+
+
+
 # Agentic Video Editor
 
 A command-line AI video editor that turns raw footage and a creative brief into a polished ad. Point `ave` at a folder of clips, describe what you want, and an ensemble of AI agents handles the rest -- scene detection, shot selection, assembly, and quality review.
